@@ -3,18 +3,19 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return ('welcome');
+    return view('welcome');
 });
-Route::get('/chiVaLa', function () {
+Route::get('/chisono', function () {
 
 
-    return 'Mi chiamo gama';
-});
-
-Route::get('/age', function () {
-    return ('ho 30 anni purtroppo');
+    return view('about');
 });
 
-Route::get('/myFavoriteSong', function () {
-    return ('A cruel angels thesis');
+Route::get('/anni', function () {
+    return view('age');
+});
+
+
+Route::get('/somma/{num1}/{num2}', function ($num1, $num2) { //URI identico
+    return $num1 - $num2;
 });
