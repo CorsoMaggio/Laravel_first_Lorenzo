@@ -7,8 +7,9 @@ Route::get('/', function () {
 });
 Route::get('/chisono', function () {
 
+    $services = ['Cani', 'gatti', 'serpenti', 'draghi', 'unicorni'];
 
-    return view('about');
+    return view('about', ['services' => $services]);
 });
 
 Route::get('/anni', function () {
