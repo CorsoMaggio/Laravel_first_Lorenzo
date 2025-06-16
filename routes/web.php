@@ -7,7 +7,23 @@ Route::get('/', function () {
 });
 Route::get('/chisono', function () {
 
-    $services = ['Cani', 'gatti', 'serpenti', 'draghi', 'unicorni'];
+    $services = [
+        [
+            'id' => 1,
+            'title' => 'Gioco a Tekken',
+            'description' => 'Utilizzo Claudio',
+        ],
+        [
+            'id' => 2,
+            'title' => 'Gioco a pokemon pocket',
+            'description' => 'Gestisco il team esport italiano',
+        ],
+        [
+            'id' => 3,
+            'title' => 'Tik Tok',
+            'description' => 'Vendo carte Pokemon',
+        ]
+    ];
 
     return view('about', ['services' => $services]);
 });
