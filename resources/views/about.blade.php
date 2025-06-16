@@ -27,6 +27,8 @@
                         <a class="nav-link" href="/anni">Age</a>
 
                     </li>
+
+
                     </a>
 
 
@@ -44,7 +46,7 @@
         <div class="card" style="width: 18rem;">
             <ul class="list-group list-group-flush">
                 @foreach ($services as $service)
-                <li class="list-group-item"> {{ $service }}</li>
+                <li class="card"> {{ $service }}</li>
                 @endforeach
             </ul>
         </div>
