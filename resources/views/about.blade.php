@@ -23,11 +23,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/chisono">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/anni">Age</a>
-
-                    </li>
-
 
                     </a>
 
@@ -44,11 +39,9 @@
     <div class="container">
 
         <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
+            <ul class="card">
                 @foreach ($services as $service)
-                <li class="card"> {{ $service['id'] }}</li>
-                <li class="card"> {{ $service['title'] }}</li>
-                <li class="card"> {{ $service['description'] }}</li>
+                <li class="card"> {{ $service }}</li>
                 @endforeach
             </ul>
         </div>
